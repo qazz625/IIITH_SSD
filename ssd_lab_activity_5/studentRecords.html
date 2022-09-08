@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			function addrow(rollinput, nameinput){
+				var table = document.getElementById("tablediv");
+				var rollinput = document.getElementById("rollinput").value
+				var nameinput = document.getElementById("nameinput").value
+				var row = table.insertRow(table.length);
+				var roll = row.insertCell(0);
+				var name = row.insertCell(1);
+				roll.innerHTML=rollinput;
+				name.innerHTML=nameinput;
+
+				document.getElementById("rollinput").value=""
+				document.getElementById("nameinput").value=""
+			}
+
+			function deleterow(){
+				var table = document.getElementById("tablediv");
+				var rowCount = table.rows.length;
+
+				if(rowCount != 1){
+				    table.deleteRow(rowCount -1);
+				}
+			}
+			
+		</script>
+	</head>
+
+	<body id="studentbody">
+		<div class="maindiv">
+			<div>
+				<form>
+					<h1 id="studenttext"> Student Records </h1>
+					<input type="text" placeholder="Roll No." class="studentinput" id="rollinput" name="rollinput">
+					<input type="text"placeholder="Name" class="studentinput" id="nameinput" name="studentinput">
+					<button type="button" id="addnewbutton" onclick="addrow()"> Add New </button>
+				</form>
+			</div>
+			<div>
+				<table id="tablediv">
+					<tr>
+						<th> Roll No.</th>
+						<th> Name </th>
+					</tr>
+				</table>
+			</div>
+			<form>
+				<button type="button" id="deletebutton" onclick="deleterow()"> Delete Last Entry </button>
+			</form>
+		</div>
+	</body>
+</html>

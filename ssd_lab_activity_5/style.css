@@ -1,0 +1,102 @@
+html{
+	height:  100%;
+}
+
+.maindiv{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.indexbody{
+	/*background-color: #c3c9c9;*/
+	background-image: linear-gradient(#c3c9c9, #ffffff);
+}
+
+#studentbody{
+	/*background-color: #83d6f7;*/
+	background-image: linear-gradient(#83d6f7, #ffffff);
+}
+
+.inputfield{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input{
+	height: 30px;
+}
+input:hover{
+	border-color: blue;
+}
+
+#welcometext{
+	margin-bottom: 100px;
+	font-family: Arial;
+}
+
+#loginbox{
+	width: 30%;
+	margin: auto;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 7px 7px 4px grey;
+	padding: 20px;
+}
+
+#loginbutton{
+	margin-top: 10px;
+	background-color: #859fa8;
+	padding: 8px 33px 8px 33px;
+	border: none;
+}
+
+.studentinput{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#studenttext{
+	font-family: Arial;
+}
+
+#addnewbutton{
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-color: #8df567;
+	padding: 8px 33px 8px 33px;
+	border:  none;
+}
+
+#tablediv{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th{
+	text-align: center;
+	padding: 20px 120px 20px 120px;
+	background-color: #42aaf5;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td{
+	text-align: center;
+	padding: 20px 120px 20px 120px;
+	background-color: #e6ecf0;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#deletebutton{
+	margin-top: 50px;
+	background-color: #e81543;
+	padding: 8px 33px 8px 33px;
+	border:  none;
+}
