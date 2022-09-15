@@ -1,0 +1,2 @@
+- Form validations have been implemented
+- Clicking on submit runs the validations and then gives an alert if it is valid

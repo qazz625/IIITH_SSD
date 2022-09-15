@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title> Lab 6 </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2> Team Form </h2>
+
+	<form>
+	<table>
+		<tr>
+			<td> Manager Name </td>
+			<td> <input type="text" id="mname" required> </td>
+			<td id="mnameerror"> </td> 
+		</tr>
+		<tr>
+			<td> Group Email </td>
+			<td> <input type="email" id="gemail" required> </td>
+			<td id="gemailerror"> </td>
+		</tr>
+		<tr>
+			<td> Server Username </td>
+			<td> <input type="text" id="suname" oninput="keyPressHandler()" required> </td>
+			<td id="sunameerror"> </td> 
+		</tr>
+		<tr>
+			<td> Server Password </td>
+			<td> <input type="password" id="spass" required> </td>
+			<td id="spasserror"> </td> 
+		</tr>
+		<tr>
+			<td> Confirm Password </td>
+			<td> <input type="password" id="cpass" onfocusout="matchpass()" required> </td>
+			<td id="cpasserror"> </td> 
+		</tr>
+	 	<tr>
+			<td> Team Lead </td>
+			<td>
+				<select id="tlead">
+					<option value="LEADER A"> LEADER A </option>
+					<option value="LEADER B"> LEADER B </option>
+					<option value="LEADER B"> LEADER B </option>
+					<option value="LEADER D"> LEADER D </option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td> Team Members </td>
+			<td>
+				<div class="TMbox">
+					<div class="TMname"> MEMBER A </div> 
+					<div class="TMname"> MEMB B </div>
+					<div class="TMname"> MEMBER C </div>
+					<div class="TMname"> MEMBER D </div>
+					<div class="TMname"> MEMBER E </div>
+				</div>
+
+				<div class="TMbox2">
+				</div>
+			</td>
+		</tr>
+	</table>
+	</form>
+
+	<button type="submit" class="submitbutton" onclick="submit()"> Submit </button>
+
+	<script src="script.js"> </script>
+</body>
+</html>
